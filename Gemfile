@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+# create a form_for
+gem 'simple_form'
 # Uses carrierwave as photo uploading tool
 gem 'carrierwave'
 #devise for user control
