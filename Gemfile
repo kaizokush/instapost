@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.6.2'
 # create a form_for
 gem 'simple_form'
 # Uses carrierwave as photo uploading tool
