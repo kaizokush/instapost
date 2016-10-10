@@ -8,6 +8,9 @@ class PostsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+  def index
+    @posts = Post.all.order('created_at DESC')
+  end
   def new
     @post=Post.new
   end
