@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <span class="count"><%= @user.post.count %></span> posts
+      <span class="count"><%= pluralize(@user.posts.count, 'post') %></span>
 
     </div>
 
@@ -34,7 +34,7 @@
 
   <div class="row">
 
-    <% @user.post.each do |post| %>
+    <% @user.posts.each do |post| %>
 
         <div class="col-xs-6">
           <%= image_tag post.photo, class: 'prof_show' %>

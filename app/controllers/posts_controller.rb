@@ -34,6 +34,12 @@ class PostsController < ApplicationController
   def show
     @post=Post.find(params[:id])
   end
+
+  def upvote
+  end
+
+  def downvote
+  end
   private
 
   def is_owner?
