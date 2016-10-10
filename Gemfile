@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+# Uses carrierwave as photo uploading tool
+gem 'carrierwave'
 #devise for user control
 gem 'devise'
 #bootstrap
