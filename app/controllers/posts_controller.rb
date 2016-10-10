@@ -2,9 +2,8 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
   before_action :is_owner?, only: [:edit,:update,:destroy]
   def create
-    @post = current_user.posts.create(post_params)
+    @post = current_user.post.create(post_params)
     if @post.valid?
-        flash[:error] = "You must be logged in to access this section"
       redirect_to root_path
     else
       render :new, status: :unprocessable_entity
@@ -28,7 +27,7 @@ class PostsController < ApplicationController
     end
   end
   def destroy
-    @post=Post.find(params[:id])
+    @post = Post.find(params[:id])
     @post.destroy
     redirect_to root_path
   end
