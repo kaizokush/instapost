@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
-  before_action :is_owner?, only: [:edit,:update]
+  before_action :is_owner?, only: [:edit,:update,:destroy]
   def create
     @post = current_user.posts.create(post_params)
     if @post.valid?
@@ -32,7 +32,9 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to root_path
   end
-
+  def show
+    @post=Post.find(params[:id])
+  end
   private
 
   def is_owner?
