@@ -1,14 +1,15 @@
-<div style="margin:0 auto">
-    <!-- <div class="cols-md-3"></div>
-    <div class="cols-md-6">
-      <div class="post_box"> -->
-<h5>Create new post</h5>
+<div>
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+<div class="post_box" style="padding:30px">
+<h2 align="center">Create new post</h2>
   <%= simple_form_for @post do |f| %>
     <%= f.input :photo %>
     <%= f.input :description %>
     <%= f.submit "Post", class: 'btn btn-default btn-block'%>
   <% end %>
-  <!-- </div>
+  </div>
 </div>
-  <div class="cols-md-3"></div> -->
+  <div class="cols-md-3"></div>
 </div>
