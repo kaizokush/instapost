@@ -2,9 +2,10 @@
   font-family: 'Satisfy', cursive;
   font-size: 26px;
   vertical-align: middle;
-  font-color:black!important;
 }
-
+.a{
+  font-color:black !important;
+}
 body{
   background-color: #fafafa;
   font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
@@ -31,7 +32,10 @@ nav{
   width: 100%;
   max-height: 100%;
 }
-
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: underline;
+}
 .post_box {
   background-color: white;
   border: 1px solid #edeeee;
