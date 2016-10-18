@@ -1,3 +1,8 @@
+
+html, body {
+       max-width: 100%;
+       overflow-x: hidden;
+   }
 .brand {
   font-family: 'Satisfy', cursive;
   font-size: 26px;
@@ -25,7 +30,7 @@ nav{
 }
 
 .nav_wrapper {
-  line-height: 78px;
+  line-height: 80px;
 }
 
 .photo {
@@ -34,7 +39,7 @@ nav{
 }
 a:hover, a:focus {
     color: #000000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .post_box {
   background-color: white;
