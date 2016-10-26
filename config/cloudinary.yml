@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: kaizokush
+  api_key: '521571826488593'
+  api_secret: jBAlxt7vAVI3XSG34LVchy15lAc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: kaizokush
+  api_key: '521571826488593'
+  api_secret: jBAlxt7vAVI3XSG34LVchy15lAc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: kaizokush
+  api_key: '521571826488593'
+  api_secret: jBAlxt7vAVI3XSG34LVchy15lAc
+  enhance_image_tag: true
+  static_image_support: false
