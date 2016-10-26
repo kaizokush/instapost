@@ -7,9 +7,11 @@ html, body {
   font-family: 'Satisfy', cursive;
   font-size: 26px;
   vertical-align: middle;
+  color: black;
 }
-.a{
-  font-color:black !important;
+a{
+  text-decoration:none;
+  color: white;
 }
 body{
   background-color: #fafafa;
