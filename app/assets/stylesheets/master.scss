@@ -11,7 +11,10 @@ html, body {
 }
 a{
   text-decoration:none;
-  color: white;
+  color: black !important;
+}
+a:hover{
+  text-decoration: none !important;
 }
 body{
   background-color: #fafafa;
@@ -121,4 +124,10 @@ a:hover, a:focus {
   .fa {
     font-size: 20px;
   }
+}
+
+
+
+.clearfix {
+  clear: both;
 }

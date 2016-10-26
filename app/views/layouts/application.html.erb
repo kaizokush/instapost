@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   </head>
 
   <body>
@@ -17,24 +18,25 @@
         <div class="row" style="padding: 0px 50px;">
           <div class="nav_wrapper">
                 <div class="col-md-4">
-                    <span class="pull-left brand"><i class="fa fa-instagram" aria-hidden="true"></i>  | <%= link_to 'Instapost', root_path %></span>
+                    <span class="pull-left brand">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>  | <%= link_to 'Instapost', root_path %></span>
                 </div>
                 <div class="col-md-4">
                 </div>
               <div class="col-md-4">
-                <% unless controller_name == "sessions" %>
                   <div align="right">
                       <% if user_signed_in? %>
                         <span class="nav_links pull-right"><%= link_to 'New Post', new_post_path %></span>
                         <span class="nav_links pull-right"><%= link_to 'Edit Settings', edit_user_registration_path %></span>
                         <span class="nav_links pull-right"><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></span>
                       <% else %>
-
+                      <% if controller_name!="sessions" %>
                         <span class="nav_links pull-right"><%= link_to 'Sign Up', new_user_registration_path %></span>
                         <span class="nav_links pull-right"><%= link_to 'Log In', new_user_session_path %></span>
+
+                      <% end %>
                       <% end %>
                   </div>
-                <%end%>
               </div>
           </div>
         </div>
