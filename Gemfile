@@ -7,6 +7,7 @@ gem 'simple_form'
 
 gem 'rails_12factor', group: :production
 # Uses carrierwave as photo uploading tool
+gem 'cloudinary'
 gem 'carrierwave'
 #devise for user control
 gem 'devise'
