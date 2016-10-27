@@ -4,7 +4,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 # create a form_for
 gem 'simple_form'
 # Uses carrierwave as photo uploading tool
-# gem 'cloudinary'
+gem 'cloudinary'
 gem 'carrierwave'
 #devise for user control
 gem 'devise'
