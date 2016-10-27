@@ -3,6 +3,9 @@ gem 'acts_as_votable', '~> 0.10.0'
 # gem 'font-awesome-sass', '~> 4.7.0'
 # create a form_for
 gem 'simple_form'
+
+
+gem 'rails_12factor', group: :production
 # Uses carrierwave as photo uploading tool
 gem 'carrierwave'
 #devise for user control
