@@ -3,8 +3,10 @@ gem 'acts_as_votable', '~> 0.10.0'
 # gem 'font-awesome-sass', '~> 4.7.0'
 # create a form_for
 gem 'simple_form'
-
-
+gem 'will_paginate'
+gem 'betterlorem'
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
 gem 'rails_12factor', group: :production
 # Uses carrierwave as photo uploading tool
 gem 'cloudinary'
@@ -12,7 +14,6 @@ gem 'carrierwave'
 #devise for user control
 gem 'devise'
 #bootstrap
-gem 'bootstrap-sass', '~>3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
